@@ -1,0 +1,7 @@
+package repositories
+
+import "Technopark_DB_Project/internal/models"
+
+type VoteRepository interface {
+	Vote(threadID int64, vote *models.Vote) (err error)
+}
